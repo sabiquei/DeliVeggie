@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliVeggie.GateWay", "DeliVeggie.GateWay\DeliVeggie.GateWay.csproj", "{C43DEAEC-725C-45DE-8B48-45D6E4E17057}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GateWay", "GateWay", "{34F1A21B-B02E-4CA8-8FEE-18C3C7AE8F3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{7BE52F0D-3A6F-412F-A303-846D0A2F3AF3}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C43DEAEC-725C-45DE-8B48-45D6E4E17057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C43DEAEC-725C-45DE-8B48-45D6E4E17057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C43DEAEC-725C-45DE-8B48-45D6E4E17057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C43DEAEC-725C-45DE-8B48-45D6E4E17057}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8F8F9CB-D168-4AC5-9BFC-37DBA8D655E6}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C43DEAEC-725C-45DE-8B48-45D6E4E17057} = {34F1A21B-B02E-4CA8-8FEE-18C3C7AE8F3C}
+	EndGlobalSection
+EndGlobal
