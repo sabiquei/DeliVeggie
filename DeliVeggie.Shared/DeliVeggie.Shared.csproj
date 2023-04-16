@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Settings\" />
+    <None Remove="Request\" />
+    <None Remove="Response\" />
+    <None Remove="Dto\" />
+    <None Remove="MessagingQueue\" />
+    <None Remove="MessagingQueue\Abstract\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Settings\" />
+    <Folder Include="Request\" />
+    <Folder Include="Response\" />
+    <Folder Include="Dto\" />
+    <Folder Include="MessagingQueue\" />
+    <Folder Include="MessagingQueue\Abstract\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EasyNetQ" Version="3.8.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.32" />
+  </ItemGroup>
+</Project>

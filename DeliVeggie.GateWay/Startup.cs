@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime;
 using System.Threading.Tasks;
+using DeliVeggie.Shared.MessagingQueue;
+using DeliVeggie.Shared.MessagingQueue.Abstract;
+using DeliVeggie.Shared.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -25,7 +29,11 @@ namespace DeliVeggie.GateWay
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSwaggerGen();
             services.AddControllers();
+            services.Configure<MqSettings>(Configuration.GetSection("MQ"));
+            services.AddSingleton<IPublisher, Publisher>();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,7 +46,15 @@ namespace DeliVeggie.GateWay
 
             app.UseHttpsRedirection();
 
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("v1/swagger.json", "MyAPI V1");
+            });
+
             app.UseRouting();
+
+            app.UseCors(a => a.AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin());
 
             app.UseAuthorization();
 
