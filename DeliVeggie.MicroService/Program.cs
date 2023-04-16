@@ -116,7 +116,7 @@ namespace DeliVeggie.MicroService
                 return product.Price;
             }
 
-            return product.Price - (product.Price * priceReduction.Reduction);
+            return product.Price * (1 - priceReduction.Reduction);
         }
     }
 }
