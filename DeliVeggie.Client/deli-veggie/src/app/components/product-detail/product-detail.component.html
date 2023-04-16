@@ -1,0 +1,26 @@
+<mat-card *ngIf="this.product" class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar>
+            <button disabled mat-mini-fab color="accent" aria-label="shopping_bag icon">
+                <mat-icon>shopping_bag</mat-icon>
+            </button>
+        </div>
+        <mat-card-title>{{this.product.name}}</mat-card-title>
+        <mat-card-subtitle>Product Details</mat-card-subtitle>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        <div>
+            <div><b>Id: </b> <span>{{this.product.id}}</span></div>
+            <div><b>Name: </b> <span>{{this.product.name}}</span></div>
+            <div><b>Entry Date: </b> <span>{{this.product.entryDate | date: 'longDate' }}</span></div>
+            <div><b>Price for today (Including reductions): </b> <span>{{this.product.priceWithReduction | currency }} </span></div>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button routerLink="/" mat-mini-fab color="accent"
+        aria-label="back icon">
+        <mat-icon>arrow_back</mat-icon>
+    </button> 
+    </mat-card-actions>
+</mat-card>

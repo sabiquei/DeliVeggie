@@ -1,0 +1,27 @@
+<table *ngIf="this.products" mat-table [dataSource]="this.products" class="mat-elevation-z8">
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> Id </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="view">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element"> 
+            <button mat-mini-fab color="accent"
+                aria-label="preview icon">
+                <mat-icon>visibility</mat-icon>
+            </button> 
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row routerLink="/products/{{row.id}}" *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
