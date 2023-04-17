@@ -32,7 +32,7 @@ import { BaseUrlInterceptor } from './services/base-url.interceptor';
       multi: true
     },
     {
-      provide: "BASE_API_URL", useValue: "https://localhost:5001/api"
+      provide: "BASE_API_URL", useValue: "http://localhost:44350/api"
     }
   ],
   bootstrap: [AppComponent]

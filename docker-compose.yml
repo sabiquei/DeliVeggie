@@ -1,7 +1,6 @@
 ﻿# docker-compose.yml
 version: '3.8'
 services:
-
   rabbitmq:
     image: rabbitmq:3-management-alpine
     container_name: rabbitmq
@@ -9,15 +8,19 @@ services:
         - RABBITMQ_DEFAULT_USER=user
         - RABBITMQ_DEFAULT_PASS=password
     restart: unless-stopped
+    healthcheck:
+      test: rabbitmq-diagnostics check_port_connectivity
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 10s
     ports:
         - 5672:5672
         - 15672:15672
     volumes:
         - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
         - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
-    networks:
-        - rabbitmq_go_net
-  mongo:
+  deliveggiemongo:
     image: mongo:5.0
     container_name: mongo
     environment:
@@ -30,20 +33,26 @@ services:
       - ./database/db:/data/db
       - ./database/dev.archive:/Databases/dev.archive
       - ./database/production:/Databases/production
-  mongo-express:
-    image: mongo-express
-    container_name: mexpress
-    environment:
-      - ME_CONFIG_MONGODB_ADMINUSERNAME=root
-      - ME_CONFIG_MONGODB_ADMINPASSWORD=password
-      - ME_CONFIG_MONGODB_URL=mongodb://root:password@mongo:27017/?authSource=admin
-      - ME_CONFIG_BASICAUTH_USERNAME=mexpress
-      - ME_CONFIG_BASICAUTH_PASSWORD=mexpress
-    links:
-      - mongo
-    restart: unless-stopped
+  gateway:
+    build:
+      context: .
+      dockerfile: DeliVeggie.GateWay/Dockerfile
     ports:
-      - "8081:8081"
+      - "44350:80"
+      - "44360:443"
+  microservice:
+    build:
+      context: .
+      dockerfile: DeliVeggie.MicroService/Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+  client:
+    build:
+      context: ./DeliVeggie.Client/deli-veggie
+      dockerfile: Dockerfile
+    ports:
+      - "8005:8005"
 networks:
-  rabbitmq_go_net:
-    driver: bridge
+  default:
+    name: localhost-bridge-network
