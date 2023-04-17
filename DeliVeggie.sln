@@ -10,6 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{7BE52F0D-3A6F-412F-A303-846D0A2F3AF3}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
+		Deployment\deliveggie-deployment.yml = Deployment\deliveggie-deployment.yml
+		Deployment\mongodb-deployment.yml = Deployment\mongodb-deployment.yml
+		Deployment\rabbitmq-deployment.yml = Deployment\rabbitmq-deployment.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MongoDb", "MongoDb", "{F59582ED-D8DF-4FA7-ABCF-D9601DE238AE}"
