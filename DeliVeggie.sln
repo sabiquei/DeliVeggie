@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliVeggie.Shared", "DeliVe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliVeggie.MicroService", "DeliVeggie.MicroService\DeliVeggie.MicroService.csproj", "{8F8880F6-F677-45A8-84E3-E825B11F0326}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeliVeggie.MicroService.Tests", "DeliVeggie.MicroService.Tests\DeliVeggie.MicroService.Tests.csproj", "{D10C6E90-8505-4DD7-AD28-FE03FC874400}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{8F8880F6-F677-45A8-84E3-E825B11F0326}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F8880F6-F677-45A8-84E3-E825B11F0326}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F8880F6-F677-45A8-84E3-E825B11F0326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D10C6E90-8505-4DD7-AD28-FE03FC874400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10C6E90-8505-4DD7-AD28-FE03FC874400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10C6E90-8505-4DD7-AD28-FE03FC874400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10C6E90-8505-4DD7-AD28-FE03FC874400}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,5 +64,6 @@ Global
 		{5247CBAC-5FA2-4F9A-87A5-CC049235EC2F} = {F59582ED-D8DF-4FA7-ABCF-D9601DE238AE}
 		{303F958D-5366-48C7-A82E-A1C4FA0F77E1} = {48732203-DF69-4BC7-9594-113BDD1EDC19}
 		{8F8880F6-F677-45A8-84E3-E825B11F0326} = {B7F89CEC-5ECF-43DF-B8BA-B40310767BB3}
+		{D10C6E90-8505-4DD7-AD28-FE03FC874400} = {B7F89CEC-5ECF-43DF-B8BA-B40310767BB3}
 	EndGlobalSection
 EndGlobal

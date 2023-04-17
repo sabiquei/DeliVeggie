@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DeliVeggie.Persistance.MongoDb.Abstract;
 using DeliVeggie.Persistance.MongoDb.DBContext.Abstract;
 using DeliVeggie.Persistance.MongoDb.Entities;
 using DeliVeggie.Shared.Dto;
@@ -11,7 +12,7 @@ using MongoDB.Driver;
 
 namespace DeliVeggie.Persistance.MongoDb
 {
-    public class ProductRepository
+    public class ProductRepository: IProductRepository
     {
         private const string CollectionName = "Products";
 

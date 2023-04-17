@@ -1,0 +1,301 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.MicroService.Tests/DeliVeggie.MicroService.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.MicroService.Tests/DeliVeggie.MicroService.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.MicroService.Tests/DeliVeggie.MicroService.Tests.csproj",
+        "projectName": "DeliVeggie.MicroService.Tests",
+        "projectPath": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.MicroService.Tests/DeliVeggie.MicroService.Tests.csproj",
+        "packagesPath": "/Users/sabique/.nuget/packages/",
+        "outputPath": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.MicroService.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sabique/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.MicroService/DeliVeggie.MicroService.csproj": {
+                "projectPath": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.MicroService/DeliVeggie.MicroService.csproj"
+              },
+              "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Persistance.MongoDb/DeliVeggie.Persistance.MongoDb.csproj": {
+                "projectPath": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Persistance.MongoDb/DeliVeggie.Persistance.MongoDb.csproj"
+              },
+              "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Shared/DeliVeggie.Shared.csproj": {
+                "projectPath": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Shared/DeliVeggie.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.MicroService/DeliVeggie.MicroService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.MicroService/DeliVeggie.MicroService.csproj",
+        "projectName": "DeliVeggie.MicroService",
+        "projectPath": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.MicroService/DeliVeggie.MicroService.csproj",
+        "packagesPath": "/Users/sabique/.nuget/packages/",
+        "outputPath": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.MicroService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sabique/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Persistance.MongoDb/DeliVeggie.Persistance.MongoDb.csproj": {
+                "projectPath": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Persistance.MongoDb/DeliVeggie.Persistance.MongoDb.csproj"
+              },
+              "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Shared/DeliVeggie.Shared.csproj": {
+                "projectPath": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Shared/DeliVeggie.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "EasyNetQ": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[3.1.32, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Persistance.MongoDb/DeliVeggie.Persistance.MongoDb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Persistance.MongoDb/DeliVeggie.Persistance.MongoDb.csproj",
+        "projectName": "DeliVeggie.Persistance.MongoDb",
+        "projectPath": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Persistance.MongoDb/DeliVeggie.Persistance.MongoDb.csproj",
+        "packagesPath": "/Users/sabique/.nuget/packages/",
+        "outputPath": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Persistance.MongoDb/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sabique/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Shared/DeliVeggie.Shared.csproj": {
+                "projectPath": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Shared/DeliVeggie.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[3.1.32, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.19.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Shared/DeliVeggie.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Shared/DeliVeggie.Shared.csproj",
+        "projectName": "DeliVeggie.Shared",
+        "projectPath": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Shared/DeliVeggie.Shared.csproj",
+        "packagesPath": "/Users/sabique/.nuget/packages/",
+        "outputPath": "/Users/sabique/Documents/Hunt 23/Fawkes/DeliVeggie/DeliVeggie.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sabique/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "EasyNetQ": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[3.1.32, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

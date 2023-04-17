@@ -14,8 +14,14 @@
     <ProjectReference Include="..\DeliVeggie.Persistance.MongoDb\DeliVeggie.Persistance.MongoDb.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Abstract\" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstract\" />
   </ItemGroup>
 </Project>

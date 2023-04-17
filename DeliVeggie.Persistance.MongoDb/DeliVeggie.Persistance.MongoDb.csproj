@@ -8,11 +8,13 @@
     <None Remove="DBContext\" />
     <None Remove="DBContext\Abstract\" />
     <None Remove="Entities\" />
+    <None Remove="Abstract\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DBContext\" />
     <Folder Include="DBContext\Abstract\" />
     <Folder Include="Entities\" />
+    <Folder Include="Abstract\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.19.1" />
